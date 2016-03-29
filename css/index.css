@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+body * {
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background-color: #f2f2f2;
+}
+
+header h1 {
+	margin: 0%;
+}
+
+header {
+	color: #ffffff;
+	background-color: #3333ff;
+	border-bottom: 2px solid #00004d;
+	padding: 20px 20px;
+}
+
+nav {
+	float: left;
+	width: 20%;
+	height: 100vh;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 5px gray;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0%;
+	padding: 10%;
+}
+
+#pathwayList li {
+	margin: 20% 0%;
+	text-align: right;
+}
+
+section {
+	float: left;
+	width: 60%;
+
+
+}
+
+figcaption {
+	float: left;
+	width: 20%;
+
+
+}
