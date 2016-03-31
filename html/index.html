@@ -6,34 +6,37 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 <body>
+	
 	<header>
 		<h1>Targeted Therapy by Pathway</h1>
-<!-- 		<div id="search">
-			<form></form>
-		</div> -->
+		<form>
+			<input type="text" name="search" placeholder="Search">
+		</form>
 	</header>
-	<main>
-		<nav>
-			<ul id="pathwayList">
-				<li id="mapk" class="pathway">MAPK</li>
-				<li id="egfr" class="pathway">EGFR/HER2</li>
-				<li id="vegf" class="pathway">VEGF/VEGFR</li>
-				<li id="mtor" class="pathway">PI3K/AKT</li>
-			</nav>
-		</section>
+	
+	<nav>
+		<ul id="pathwayList">
+			<li id="mapk" class="pathway">MAPK</li>
+			<li id="egfr" class="pathway">EGFR/HER2</li>
+			<li id="vegf" class="pathway">VEGF/VEGFR</li>
+			<li id="mtor" class="pathway">PI3K/AKT</li>
+		</ul>
+	</nav>
+	<main >
 		<section>
-			<img src="../images/MAPK.png"/>
-			<div id="BRAF" class="proteinTarget"></div>
-			<div id="MEF" class="proteinTarget"></div>
+			<h2>MAPK Pathway</h2>
+			<div class="background-image">
+				<p id="BRAF" class="proteinTarget">BRAF</p>
+				<p id="MEF" class="proteinTarget">MEF</p>
+			</div>
+
+			<p>The MAPK pathway consists of a cascade of serine/threonine kinases that are activated downstream of the active Ras GTPase. Conical members of the pathway are MAPKKK (RAF), MAPKK (MEK), and MAPK (Erk1/2). Targeted therapies against the MAPK pathway in clinical use include BRAF and MEK inhibitors</p>
 		</section>
 		<figcaption>
-			<ul id="inhibitorList">
-			<!--list item content to be added dynamically using javascript-->
-				<li id="drug1" class="drugList"></li>
-				<li id="drug2" class="drugList"></li>
-				<li id="drug3" class="drugList"></li>
-				<li id="drug4" class="drugList"></li>
-			</ul>
+			<!--page starts with no displayswitch class. Added with javascript-->
+			<p id="braf-p" >BRAF is mutated in 90% of melanomas. Several BRAF inhibitors have been approved by the FDA.</p>
+			<p id="mef-p" class="displayswitch">MEF operates downstream of mutant BRAF. FDA approved drugs targeting MEF are used as a means of circumventing resistance to BRAF inhibitors.</p>
+
 		</figcaption>
 	</main>
 	<footer>
