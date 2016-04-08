@@ -39,6 +39,7 @@ header {
 	color: #ffffff;
 	background-color: #61a38a;
 	padding: 20px 20px;
+	border-bottom: 2px solid #83c4c0;
 }
 
 form {
@@ -73,7 +74,9 @@ nav ul {
 	height: 50px;
 	text-align: left;
 	vertical-align: center;
-	padding: 0% 10%;
+	padding: 0% 15%;
+	/*line height fixes vertical centering of text!!!*/
+	line-height: 2;
 }
 
 #pathwaylist:firstchild {
@@ -81,7 +84,12 @@ nav ul {
 }
 
 nav li:hover {
-	background-color: gray;
+	background-color: #d1d1d1;
+}
+
+.active {
+	background-color: #535a61;
+	color: white;
 }
 
 /******************MAIN*******************/
@@ -89,14 +97,14 @@ main {
 	margin: 0;
 	float: left;
 	width: 80%;
-	border-top: 2px solid #83c4c0;
+
 
 }
 
 section {
 	float: left;
-	width: 60%;
-	padding: 20px 50px;
+	width: 70%;
+	padding: 20px 25px;
 	color: white;
 }
 
@@ -107,19 +115,20 @@ section h2 {
 .background-image {
 	display: block;
 	width: 100%;
-	height: 500px;
+	height: auto;
 	background-color: white;
-	background-image: url("../images/map-kinase.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: relative;
-/*	box-shadow: 1px 1px 5px gray;*/
 	border-radius: 5px;
+	padding: 10px;
 }
 
 /******Clickable Proteins*******/
-.proteinTarget {
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*.proteinTarget {
 	display: block;
 	margin: 0;
 	width: 10%;
@@ -137,17 +146,17 @@ section h2 {
 	left: 44%;
 }
 
-#MEF {
+#MEK {
 	top: 57%;
 	left: 44%;
-}
+}*/
 
 /******************FIGURE CAPTION**************/
 
 figcaption {
 	float: left;
 	width: 30%;
-	padding: 0;
+	padding: 0px 25px 0px 0px;
 	margin: 11% 0%;
 }
 
