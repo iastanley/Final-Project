@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Targeted Therapies by Pathway</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	
+	<header>
+		<h1><a href="index.html">Cell Signaling Pathways in Cancer</a></h1>
+		<form id="search">
+			<input type="text" name="search" placeholder="Search" id="search-query">
+		</form>
+	</header>
+	
+	<nav>
+		<div id="hamburger" class="open">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul id="pathwayList">
+			<li id="mapk" class="pathway">
+				<a href="mapk.html">MAPK</a>
+			</li>
+			<li id="egfr" class="pathway active">
+				<a href="egfr.html">EGFR/HER2</a>
+			</li>
+			<li id="vegf" class="pathway">
+				<a href="vegf.html">VEGF/VEGFR</a>
+			</li>
+			<li id="mtor" class="pathway">
+				<a href="pi3k.html">PI3K/AKT</a>
+			</li>
+		</ul>
+	</nav>
+	<main >
+		<section>
+			<h2>EGFR Pathway</h2>
+			<div class="background-image">
+				<img src="images/EGFR.jpg" width="550" height="550" alt="egfr-path" usemap="egfr-map">
+				<!-- IMAGE MAP -->
+				<map name="egfr-map">
+					<area shape="rect" coords="153,172,171,305" alt="HER2">
+					<area shape="rect" coords="181,174,199,305" alt="HER3">
+					<area shape="rect" coords="333,171,376,305" alt="EGFR">
+				</map>
+			</div>
+
+			<p>EGFR Pathway Description...</p>
+		</section>
+		<figcaption>
+			<!--page starts with no displayswitch class. Added with javascript-->
+			<p id="braf-p" >BRAF is mutated in 90% of melanomas. Several BRAF inhibitors have been approved by the FDA.</p>
+			<p id="mek-p">MEK operates downstream of mutant BRAF. FDA approved drugs targeting MEK are used as a means of circumventing resistance to BRAF inhibitors.</p>
+
+		</figcaption>
+	</main>
+	<footer>
+		<!--Content still being decided-->
+	</footer>
+
+<!-- JAVASCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" type="text/javascript"></script>
+<script src="js/rwdImageMaps.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

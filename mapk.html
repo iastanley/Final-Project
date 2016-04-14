@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Targeted Therapies by Pathway</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	
+	<header>
+		<h1><a href="index.html">Cell Signaling Pathways in Cancer</a></h1>
+		<form id="search">
+			<input type="text" name="search" placeholder="Search" id="search-query">
+		</form>
+	</header>
+	
+	<nav>
+		<div id="hamburger" class="open">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<ul id="pathwayList">
+			<li id="mapk" class="pathway active">
+				<a href="mapk.html">MAPK</a>
+			</li>
+			<li id="egfr" class="pathway">
+				<a href="egfr.html">EGFR/HER2</a>
+			</li>
+			<li id="vegf" class="pathway">
+				<a href="vegf.html">VEGF/VEGFR</a>
+			</li>
+			<li id="mtor" class="pathway">
+				<a href="pi3k.html">PI3K/AKT</a>
+			</li>
+		</ul>
+	</nav>
+	<main >
+		<section>
+			<h2>MAPK Pathway</h2>
+			<div class="background-image">
+				<!-- BEGINNING OF IMAGE MAP -->
+				<img src="images/MAPK.jpg" width="550" height="550" alt="mapk-path" usemap="mapk-map">
+
+				<map name="mapk-map">
+					<area shape="rect" coords="247,219,301,249" alt="RAS">
+					<area shape="rect" coords="234,281,314,304" alt="RAF">
+					<area shape="rect" coords="232,351,314,374" alt="MEK">
+					<area shape="rect" coords="212,422,337,446" alt="MAPK">
+				</map>
+			</div>
+
+			<p>The MAPK pathway consists of a cascade of serine/threonine kinases that are activated downstream of the active Ras GTPase. Conical members of the pathway are MAPKKK (RAF), MAPKK (MEK), and MAPK (Erk1/2). Targeted therapies against the MAPK pathway in clinical use include BRAF and MEK inhibitors</p>
+		</section>
+		<figcaption>
+			<!--page starts with no displayswitch class. Added with javascript-->
+			<p id="ras-p">Ras is a G protein that is often hyperactivated in cancer. Ras acts downstream of receptor tyrosine kinases and upstream of the MAPK pathway. Ras is generally considered an "undruggable" protein because of how it's GTPase activity is regulated.</p>
+			<p id="raf-p" >BRAF is mutated in 90% of melanomas. Several BRAF inhibitors have been approved by the FDA.</p>
+			<p id="mek-p">MEK operates downstream of mutant BRAF. FDA approved drugs targeting MEK are used as a means of circumventing resistance to BRAF inhibitors.</p>
+			<p id="erk-p">The final kinase in the MAPK kinase cascade is called MAPK or Erk (extracellular regulated kinase). Erk phosphorylates downstream targets that alter transcription in the nucleus to promote cancer cell proliferation and survival</p>
+
+		</figcaption>
+	</main>
+	<footer>
+		<!--Content still being decided-->
+	</footer>
+
+<!-- JAVASCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" type="text/javascript"></script>
+<script src="js/rwdImageMaps.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
