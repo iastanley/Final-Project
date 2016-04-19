@@ -43,6 +43,42 @@ function showCaption(){
 	} else if ($(this).is('area[alt="MAPK"')) {
 		removeAllCaptions();
 		$('#erk-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="HER2"]')){
+		removeAllCaptions();
+		$('#her2-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="EGFR"]')){
+		removeAllCaptions();
+		$('#egfr-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="HER3"]')){
+		removeAllCaptions();
+		$('#her3-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="VEGFR1"]')){
+		removeAllCaptions();
+		$('#vegfr1-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="VEGFR2"]')){
+		removeAllCaptions();
+		$('#vegfr2-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="VEGFR3"]')){
+		removeAllCaptions();
+		$('#vegfr3-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="VEGFA"]')){
+		removeAllCaptions();
+		$('#vegfa-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="PI3K"]')){
+		removeAllCaptions();
+		$('#pi3k-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="AKT"]')){
+		removeAllCaptions();
+		$('#akt-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="PTEN"]')){
+		removeAllCaptions();
+		$('#pten-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="MTOR"]')){
+		removeAllCaptions();
+		$('#mtor-p').addClass('displayswitch');
+	} else if ($(this).is('area[alt="INTRO"]')){
+		removeAllCaptions();
+		$('#intro-p').addClass('displayswitch');
 	}
 }
 

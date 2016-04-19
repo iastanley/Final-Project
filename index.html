@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-	
+<div id="container" class="clearfix">
 	<header>
 		<h1><a href="index.html">Cell Signaling Pathways in Cancer</a></h1>
 		<form id="search">
@@ -40,25 +40,26 @@
 			<h2>Introduction</h2>
 			<!-- BEGINNING OF IMAGE MAP -->
 			<div class="background-image">
-				<img src="images/TitleImage.jpg" width="598" height="500" alt="title" usemap="title-map">
+				<img src="images/TitleImage.jpg" width="550" height="550" alt="title" usemap="title-map">
 
 				<map name="title-map">
+					<area shape="poly" coords="163,290,236,275,316,294,237,310" alt="INTRO">
 				</map>
 			</div>
 
-			<p>Welcome to Targeted Therapy by Pathway. Select your favorite pathway on the left to learn more. </p>
 		</section>
 		<figcaption>
 			<!--page starts with no displayswitch class. Added with javascript-->
-			<p id="intro" class="displayswitch">Special info on each protein target will be displayed here.</p>
+			<p id="intro-p">A summary of each pathway will be shown here. Click on a protein of interest to see specific info on that protein.</p>
+			<p id="permanent">Welcome to Cell Signaling Pathways in Cancer. To get started select a pathway from the menu.</p>
 		
 
 		</figcaption>
 	</main>
-	<footer>
-		<!--Content still being decided-->
-	</footer>
-
+<!-- 	<footer>
+		<p>&copy 2016 Created by Illana Stanley</p> 
+	</footer> -->
+</div>
 <!-- JAVASCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js" type="text/javascript"></script>
 <script src="js/rwdImageMaps.js"></script>

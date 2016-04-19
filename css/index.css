@@ -2,15 +2,36 @@
 
 /**********BODY STYLING***************/
 
+/*html {
+		max-width: 90%;
+		margin: auto;
+		background-color: black;
+}*/
+
 body * {
 	box-sizing: border-box;
 	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
 
 body {
 	/*background-color: #535a61;*/
-	background-color: #7c7c7f;
+	/*background-color: #7c7c7f;*/
+	background-image: url('../images/58_L-Intestine_aSMA.JPG');
+	background-size: 100%;
+/*	height: 100%;*/
+
+/*	background-repeat: no-repeat;*/
 }
+
+/*#container {
+	min-height: 100%;
+	position: relative;
+	clear: both;
+}*/
+
+
+
 
 .clearfix:after {
      content: ".";
@@ -37,9 +58,9 @@ header h1 {
 
 header {
 	color: #ffffff;
-	background-color: #4783d1;
+	background-color: #2323cd;
 	padding: 20px 20px;
-	border-bottom: 2px solid #33cc33;
+	border-bottom: 2px solid #83fa4c;
 	box-shadow: 2px 2px 5px black;
 }
 
@@ -53,6 +74,7 @@ input {
 	padding-left: 10px;
 	height: 30px;
 	border: 1px solid black;
+	border-radius: 15px;
 }
 
 /******************NAV********************/
@@ -61,8 +83,8 @@ input {
 
 #hamburger {
   	float: right;
-  	width: 50px;
-  	height: 43px;
+  	width: 40px;
+  	height: 38px;
   	position: relative;
   	margin: 4px 4px;
   	transform: rotate(0deg);
@@ -73,7 +95,7 @@ input {
 #hamburger span {
 	display: block;
   	position: absolute;
-  	height: 8px;
+  	height: 7px;
   	width: 100%;
   	background: black;
   	border-radius: 9px;
@@ -92,7 +114,7 @@ input {
 }
 
 #hamburger span:nth-child(2) {
-  top: 16px;
+  top: 14px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -100,7 +122,7 @@ input {
 }
 
 #hamburger span:nth-child(3) {
-  top: 32px;
+  top: 28px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -112,7 +134,7 @@ input {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: -1px;
+  top: 3px;
   left: 8px;
 }
 
@@ -126,7 +148,7 @@ input {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 35px;
+  top: 32px;
   left: 8px;
 }
 
@@ -137,12 +159,12 @@ input {
 
 #pathwayList li {
 	margin: 0% 0%;
-	height: 50px;
+	height: 45px;
 	text-align: left;
 	vertical-align: center;
 	padding: 0% 15%;
 	/*line height fixes vertical centering of text!!!*/
-	line-height: 2;
+	line-height: 1.8;
 	clear: both;
 }
 
@@ -156,6 +178,7 @@ nav {
 	height: auto;
 	background-color: #ffffff;
 	box-shadow: 2px 2px 5px black;
+/*	border-radius: 0px 0px 5px 0px;*/
 }
 
 #pathwayList {
@@ -171,8 +194,9 @@ nav .pathway:hover {
 }
 
 .active {
-	background-color: #7c7c7f;
+	background-color: black;
 	color: white;
+
 }
 
 /********TO CLOSE SIDE BAR*********/
@@ -186,19 +210,21 @@ nav.close {
 
 }
 
+
+
 /******************MAIN*******************/
 main {
 	margin: 0;
 	float: left;
 	width: 80%;
-
-
 }
+
+
 
 section {
 	float: left;
 /*width changed from 70% to 60% to make image smaller*/	
-	width: 60%;
+	width: 65%;
 	padding: 20px 25px;
 	color: white;
 }
@@ -212,9 +238,9 @@ section h2 {
 	width: 100%;
 	height: auto;
 	background-color: white;
-	border-radius: 5px;
 	padding: 10px;
 	box-shadow: 5px 5px 5px black;
+	border: 2px solid black;
 }
 
 /******Clickable Proteins*******/
@@ -227,27 +253,48 @@ img {
 
 figcaption {
 	float: left;
-	width: 30%;
+	width: 35%;
 	padding: 0px 25px 0px 0px;
 	margin: 11% 0%;
 }
 
 figcaption p {
 	display: none;
-	background-color: white;
-	box-shadow: 5px 5px 5px black;
+	color: white;
+	border: 1px solid white;
+	background-color: rgba(0, 0, 0, .7);
+	/*box-shadow: 5px 5px 5px black;*/
 	margin: 0;
 	padding: 5px;
-	border-radius: 5px;
+	font-weight: 300;
+	/*border-radius: 0px 0px;*/
+}
+
+/*permanent caption for homepage only*/
+#permanent {
+	margin-top: 5%;
+	display: block;
 }
 
 
 
 /****************FOOTER*************/
-footer {
+/*footer {
 	clear: both;
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
+
+footer p {
+	float: left;
+	font-size: 0.6em;
+	color: white;
+	margin-left: 5%;
+}*/
 
 /************FOR JAVASCRIPT******************/
 p.displayswitch {
@@ -277,10 +324,13 @@ main {
 }
 
 section {
-	width: 70%;
+	width: 65%;
 }
 
-
+figcaption {
+	width: 35%;
+	font-size: 1em;
+}
 
 }
 
